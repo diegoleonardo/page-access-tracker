@@ -1,0 +1,19 @@
+<h2>Show Contact viewer</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>URL</th>
+      <th>Access Date:</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for accessedPage <- @accessedPages do %>
+    <tr>
+      <td><%= accessedPage.accessed_url %></td>
+      <td><%= accessedPage.access_date %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+<span><%= link "Back", to: contact_viewer_path(@conn, :index) %></span>

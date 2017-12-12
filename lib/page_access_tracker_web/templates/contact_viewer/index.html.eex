@@ -1,0 +1,26 @@
+<h2>Listing Contacts</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for contact <- @contacts do %>
+    <tr>
+      <td><%= contact.firstname %></td>
+      <td><%= contact.lastname %></td>
+      <td><%= contact.email %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: contact_viewer_path(@conn, :show, contact), class: "btn btn-default btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>

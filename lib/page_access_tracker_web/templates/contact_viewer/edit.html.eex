@@ -1,0 +1,5 @@
+<h2>Edit Contact viewer</h2>
+
+<%= render "form.html", Map.put(assigns, :action, contact_viewer_path(@conn, :update, @contact_viewer)) %>
+
+<span><%= link "Back", to: contact_viewer_path(@conn, :index) %></span>
