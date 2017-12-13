@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :page_access_tracker, PageAccessTracker.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "josel1to",
   database: "page_access_tracker_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
