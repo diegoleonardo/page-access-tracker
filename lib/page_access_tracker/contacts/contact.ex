@@ -17,6 +17,6 @@ defmodule PageAccessTracker.Contacts.Contact do
   def changeset(%Contact{} = contact, attrs) do
     contact
     |> cast(attrs, [:visitor_id, :firstname, :lastname, :email, :phone])
-    |> validate_required([:visitor_id, :firstname, :lastname, :email, :phone])
+    |> validate_required([:visitor_id, :email])
   end
 end

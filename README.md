@@ -18,6 +18,4 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Se você deseja ver o arquivo javascript que interagem com o backend, visite
-
 If you wanna see the javascript file that interacts with the backend, you can check it at https://github.com/diegoleonardo/cdn-tracking-access
