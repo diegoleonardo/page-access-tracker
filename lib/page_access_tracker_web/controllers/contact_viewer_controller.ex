@@ -2,7 +2,6 @@ defmodule PageAccessTrackerWeb.ContactViewerController do
   use PageAccessTrackerWeb, :controller
 
   alias PageAccessTracker.Contacts
-  alias PageAccessTracker.Contacts.Contact
   alias PageAccessTracker.AccessedPages
 
   def index(conn, _params) do
