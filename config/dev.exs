@@ -52,7 +52,7 @@ config :phoenix, :stacktrace_depth, 20
 config :page_access_tracker, PageAccessTracker.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "josel1to",
+  password: "postgres",
   database: "page_access_tracker_dev",
   hostname: "localhost",
   pool_size: 10

@@ -35,6 +35,7 @@ defmodule PageAccessTrackerWeb.AccessedPageControllerTest do
       conn = post conn, accessed_page_path(conn, :create), accessed_page: @invalid_attrs
       assert json_response(conn, 422)["errors"] != %{}
     end
+    
   end
 
   defp create_visitor(_) do
